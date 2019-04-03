@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/photoIm"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/photo"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/pointIm1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/photoIm"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@mipmap/ic_student"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/pointIm2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/pointIm1"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@mipmap/ic_andr"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/pointIm3"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/pointIm2"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@mipmap/ic_tour"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/pointText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pointIm1"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="@dimen/align_text_point"
+            android:layout_toEndOf="@+id/pointIm1"
+            android:layout_toRightOf="@+id/pointIm1"
+            android:textSize="@dimen/text_size"
+            android:text="@string/First_string" />
+
+        <TextView
+            android:id="@+id/pointText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pointIm2"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="@dimen/align_text_point"
+            android:layout_toEndOf="@+id/pointIm2"
+            android:layout_toRightOf="@+id/pointIm2"
+            android:textSize="@dimen/text_size"
+            android:text="@string/beginner_in_studying_android"  />
+
+        <TextView
+            android:id="@+id/pointText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pointIm3"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="@dimen/align_text_point"
+            android:layout_toEndOf="@+id/pointIm3"
+            android:layout_toRightOf="@+id/pointIm3"
+            android:textSize="@dimen/text_size"
+            android:text="@string/Third_string" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pointIm3"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="50dp"
+            android:textSize="@dimen/text_size"
+            android:text="@string/About_me_text" />
+
+        <Button
+            android:id="@+id/enterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/send_message"
+            android:textColor="@color/colorRed" />
+
+        <ImageButton
+            android:id="@+id/address1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/enterButton"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@mipmap/ic_vk"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/address2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/enterButton"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/address1"
+            android:layout_toRightOf="@+id/address1"
+            app:srcCompat="@mipmap/ic_inst"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/address3"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/enterButton"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toEndOf="@+id/address2"
+            android:layout_toRightOf="@+id/address2"
+            app:srcCompat="@mipmap/ic_mephi"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:inputType="textMultiLine"
+            tools:ignore="Autofill,LabelFor" />
+
+        <LinearLayout
+            android:id="@+id/textLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/address1"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp">
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/photoIm"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/photo"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/pointIm1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/photoIm"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/pointIm2"
+            app:layout_constraintEnd_toStartOf="@+id/pointText1"
+            app:layout_constraintStart_toEndOf="@+id/photoIm"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_student"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/pointIm2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/pointIm1"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/photoIm"
+            app:layout_constraintTop_toBottomOf="@+id/pointIm1"
+            app:srcCompat="@mipmap/ic_andr"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/pointIm3"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/pointIm2"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/photoIm"
+            app:layout_constraintTop_toBottomOf="@+id/pointIm2"
+            app:srcCompat="@mipmap/ic_tour"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/pointText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pointIm1"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/pointIm1"
+            android:layout_toRightOf="@+id/pointIm1"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toEndOf="@+id/pointIm1"
+            app:layout_constraintTop_toTopOf="@+id/pointIm1"
+            android:text="@string/First_string" />
+
+        <TextView
+            android:id="@+id/pointText2"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignTop="@+id/pointIm2"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/pointIm2"
+            android:layout_toRightOf="@+id/pointIm2"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toEndOf="@+id/pointIm2"
+            app:layout_constraintTop_toTopOf="@+id/pointIm2"
+            android:text="@string/beginner_in_studying_android" />
+
+        <TextView
+            android:id="@+id/pointText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pointIm3"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/pointIm3"
+            android:layout_toRightOf="@+id/pointIm3"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toEndOf="@+id/pointIm3"
+            app:layout_constraintTop_toTopOf="@+id/pointIm3"
+            android:text="@string/Third_string" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pointIm3"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toEndOf="@+id/photoIm"
+            app:layout_constraintTop_toBottomOf="@+id/pointText3"
+            android:text="@string/About_me_text"
+            />
+        <Button
+            android:id="@+id/enterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_marginTop="8dp"
+            android:text="@string/send_message"
+            android:textColor="@color/colorRed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+
+             />
+
+        <ImageButton
+            android:id="@+id/address1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/enterButton"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/photoIm"
+            app:layout_constraintTop_toBottomOf="@+id/enterButton"
+            app:srcCompat="@mipmap/ic_vk"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/address2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/enterButton"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/address1"
+            android:layout_toRightOf="@+id/address1"
+            app:layout_constraintStart_toEndOf="@+id/address1"
+            app:layout_constraintTop_toTopOf="@+id/address1"
+            app:srcCompat="@mipmap/ic_inst"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/address3"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/enterButton"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/address2"
+            android:layout_toRightOf="@+id/address2"
+            app:layout_constraintStart_toEndOf="@+id/address2"
+            app:layout_constraintTop_toTopOf="@+id/address2"
+            app:srcCompat="@mipmap/ic_mephi"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/photoIm"
+            app:layout_constraintTop_toBottomOf="@+id/description"
+            tools:ignore="Autofill,LabelFor" />
+
+        <LinearLayout
+            android:id="@+id/textLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/address1"
+            app:layout_constraintStart_toEndOf="@+id/photoIm"
+            tools:ignore="MissingConstraints" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

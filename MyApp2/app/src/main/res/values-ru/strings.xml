@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApp2</string>
+    <string name="send_message">Отправить сообщение</string>
+    <string name="beginner_in_studying_android">Новичок в изучении Андроида</string>
+    <string name="Third_string">Турист</string>
+    <string name="First_string">Студент МИФИ</string>
+    <string name="error">Ошибка</string>
+    <string name="About_me_text">Ольга начала знакомство с Андроидом совсем недавно. Это пробный вариант приложения-визитки.</string>
+</resources>

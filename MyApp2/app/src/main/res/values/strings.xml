@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyApp2</string>
+    <string name="send_message">Send Message</string>
+    <string name="beginner_in_studying_android">Beginner in studying Android</string>
+    <string name="Third_string">Tourist</string>
+    <string name="First_string">Mephi student</string>
+    <string name="About_me_text">Olga has started to learn Android in March. Here you can see her pilot card app.</string>
+    <string name="error">Error</string>
+</resources>
