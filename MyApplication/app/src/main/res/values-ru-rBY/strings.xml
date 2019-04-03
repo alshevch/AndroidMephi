@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">мае прыкладаннi</string>
-    <string name="viewText">прагляд тэксту</string>
-    <string name="Error">памылка</string>
+    <string name="app_name">Мае прыкладаннi</string>
+    <string name="viewText">Прагляд тэксту</string>
+    <string name="Error">Памылка</string>
 </resources>
